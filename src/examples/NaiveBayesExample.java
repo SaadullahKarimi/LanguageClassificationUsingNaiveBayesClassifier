@@ -70,20 +70,29 @@ public class NaiveBayesExample {
         
         
         //Use classifier
+        Scanner in = new Scanner(System.in);
         nb = new NaiveBayes(knowledgeBase);
-        String exampleEn = "I am English";
+        System.out.println("Enter value for Persian");
+        String examplePR = in.nextLine();
+        String outputPR = nb.predict(examplePR);
+        System.out.format("The sentense \"%s\" was classified as \"%s\".%n", examplePR, outputPR);
+          
+        nb = new NaiveBayes(knowledgeBase);
+        System.out.println("Enter value for English");
+        String exampleEn = in.nextLine();
         String outputEn = nb.predict(exampleEn);
         System.out.format("The sentense \"%s\" was classified as \"%s\".%n", exampleEn, outputEn);
         
-        String exampleFr = "Je suis Français";
+         System.out.println("Enter value for France");
+        String exampleFr = in.nextLine();
         String outputFr = nb.predict(exampleFr);
         System.out.format("The sentense \"%s\" was classified as \"%s\".%n", exampleFr, outputFr);
         
-        String exampleDe = "Ich bin Deutsch";
+        System.out.println("Enter value for German");
+        String exampleDe = in.nextLine();
         String outputDe = nb.predict(exampleDe);
         System.out.format("The sentense \"%s\" was classified as \"%s\".%n", exampleDe, outputDe);
         
-
     }
     
 }
