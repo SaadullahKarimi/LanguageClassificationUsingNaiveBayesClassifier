@@ -1,19 +1,4 @@
-/* 
- * Copyright (C) 2014 Vasilis Vryniotis <bbriniotis at datumbox.com>
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+
 package com.datumbox.opensource.features;
 
 import com.datumbox.opensource.dataobjects.Document;
@@ -25,9 +10,7 @@ import java.util.Map;
  * TextTokenizer class used to tokenize the texts and store them as Document
  * objects.
  * 
- * @author Vasilis Vryniotis <bbriniotis at datumbox.com>
- * @see <a href="http://blog.datumbox.com/developing-a-naive-bayes-text-classifier-in-java/">http://blog.datumbox.com/developing-a-naive-bayes-text-classifier-in-java/</a>
- */
+ **/
 public class TextTokenizer {
     
     /**
