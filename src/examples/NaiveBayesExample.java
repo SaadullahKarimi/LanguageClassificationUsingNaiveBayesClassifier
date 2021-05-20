@@ -71,13 +71,8 @@ public class NaiveBayesExample {
         
         //Use classifier
         Scanner in = new Scanner(System.in);
-        nb = new NaiveBayes(knowledgeBase);
-        System.out.println("Enter value for Persian");
-        String examplePR = in.nextLine();
-        String outputPR = nb.predict(examplePR);
-        System.out.format("The sentense \"%s\" was classified as \"%s\".%n", examplePR, outputPR);
-          
-        nb = new NaiveBayes(knowledgeBase);
+        nb = new NaiveBayes(knowledgeBase)
+      
         System.out.println("Enter value for English");
         String exampleEn = in.nextLine();
         String outputEn = nb.predict(exampleEn);
